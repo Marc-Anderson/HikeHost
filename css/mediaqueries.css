@@ -8,9 +8,9 @@
     /* Small devices (portrait tablets and large phones, 600px and up) */
     @media only screen and (min-width: 600px) {
 
-        .site-header {
-            padding: 0px 8px;
-        }
+        /* .site-header {} */
+        
+        /* .site-header-one {} */
 
         .site-header-contents {
             grid-template-columns: 4fr 1fr;
@@ -35,6 +35,10 @@
 
         .nav-item {
             padding: 20px 24px 0px;
+        }
+
+        .section-container {
+            width: 86%;
         }
 
     }

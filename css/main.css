@@ -117,7 +117,7 @@ textarea {
     */
 
         body {
-            background-color: red;
+            background-color: white;
             font-family: 'Source Sans Pro', sans-serif;
         }
 
@@ -148,6 +148,10 @@ textarea {
 
         .bg--red {
             background-color: var(--color-tertiary);
+        }
+
+        .max-width {
+            max-width: 1280px;
         }
 
         .full-page-image-container {
@@ -240,13 +244,98 @@ textarea {
     * Main Body Styles
     */
 
-        .main-section {
-            height: 65vh;
+        .hero-section {
+            height: 66vh;
             background-image: url(../assets/media/wittenberg_seasons_original.gif);
             background-size: cover;
             background-repeat: no-repeat;
             background-position: 50% 50%;
         }
+
+        .hero-cta-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            background-color: transparent;
+        }
+
+        .hero-cta-item {
+            color: var(--color-primary);
+            display: block;
+            font-size: 20px;
+            padding: 68px 0px 68px 0px;
+            text-align: center;
+            text-decoration: none;
+            overflow: hidden;
+        }
+
+        .hero-cta-item--text {
+            display: block;
+            transition: all .65s cubic-bezier(0.23, 1, 0.32, 1);
+        }
+        
+        .hero-cta-item--img {
+            position: absolute;
+            transform: translate(-50%, -50%) scale(0);
+            transition: all .65s cubic-bezier(0.23, 1, 0.32, 1);
+            opacity: 0;
+            width: 70px;
+        }
+        
+        .hero-cta-item:hover {
+            padding: 55px 0px 55px 0px;
+        }
+
+        .hero-cta-item--text-hover {
+            opacity: 0;
+            transform: translate(0, -150%);
+        }
+
+        .hero-cta-item--img-hover {
+            opacity: 1;
+            transform: translate(-50%, -50%) scale(1);
+        }
+
+        .section-container {
+            margin: 0 auto;
+            padding: 85px 0px;
+            width: 93%;
+        }
+
+        .section-container p {
+            font-size: 1.23rem;
+            line-height: 1.7;
+            margin: 0;
+            padding: 0;
+            text-align: justify;
+        }
+
+        .section-container h1 {
+            margin: 0;
+            padding: 0;
+        }
+
+        .section-one h1 {
+            font-size: 46px;
+            font-weight: 400;
+        }
+
+        .section-one p {
+            font-size: 1.36rem;
+        }
+
+        .section-two {
+            background-color: var(--color-primary);
+        }
+
+        .section-four {
+            background-color: var(--color-secondary);
+        }
+
+        .section-six {
+            background-color: var(--color-secondary-accent);
+        }
+
+
 
     /* 
         #site-body {}
