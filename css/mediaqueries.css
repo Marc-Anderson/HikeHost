@@ -37,14 +37,23 @@
             padding: 20px 24px 0px;
         }
 
-        .section-container {
+        .fullpage-pricelist-container {
             width: 86%;
+        }
+        
+        .fullpage-pricelist-body {
+            grid-template-columns: 1fr 2fr;
+            grid-gap: unset;
         }
 
     }
 
     /* Medium devices (landscape tablets, 768px and up) */
-    @media only screen and (min-width: 768px) {}
+    @media only screen and (min-width: 768px) {
+        .hero-cta {
+            display: grid;
+        }
+    }
 
     /* Large devices (laptops/desktops, 992px and up) */
     @media only screen and (min-width: 992px) {}
