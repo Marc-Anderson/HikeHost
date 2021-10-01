@@ -46,6 +46,15 @@
             grid-gap: unset;
         }
 
+        .media-grid-section {
+            padding: 40px 3vw;   
+        }
+
+        .media-grid {
+            grid-template-columns: repeat(auto-fit, minmax(362px, 1fr));
+        }
+      
+
     }
 
     /* Medium devices (landscape tablets, 768px and up) */
