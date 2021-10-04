@@ -111,6 +111,22 @@ textarea {
             /* --color-senary: rgb(0,0,0); */
         /* septenary, octonary */
     }
+        /* 
+        very easy
+        style="color: var(--color-secondary);"
+
+        easy
+        style="color: var(--color-primary);"
+
+        moderate
+        style="color: var(--color-tertiary);"
+
+        challenging
+        style="color: var(--color-secondary-accent);"
+
+        very challenging
+        style="color: var(--color-quaternary);"
+        */
 
     /*
     * Site resets
@@ -411,7 +427,7 @@ textarea {
         }
         
         .page-title {
-            font-size: 4.5rem;
+            font-size: 4rem;
             font-weight: 400;
             max-width: 86%;
         }
@@ -474,7 +490,7 @@ textarea {
 
         .media-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             margin: 0 auto;
         }
 
@@ -495,9 +511,47 @@ textarea {
         }
 
         .media__main {
-            padding-left: 20px;
+            padding: 20px;
             overflow: hidden;
+            box-shadow: inset 0px 0px 6px #bebebe;
+            border-radius: 0px 0px 10px 10px;
         }
+        
+        .media__title {
+            font-weight: 400;
+            font-size: 1.6rem;
+            margin-top: 0;
+            margin-bottom: 7px;
+        }
+
+        .media__details {}
+
+        .media__attr {
+            margin: 0;
+            font-weight: 400;
+        }
+
+        .media__feature-list {
+            list-style-type: none;
+            /* display: grid; */
+            /* grid-template-columns: repeat(auto-fit, minmax(101px, 1fr)); */
+            display: flex;
+            flex-wrap: wrap;
+            gap: 4px;
+        }
+
+        .media__feature-list li {
+            padding: 3px 5px;
+            border: solid 1px #cacaca;
+            border-radius: 3px;
+            color: #cacaca;
+            box-shadow: 0px 0px 4px #ebebeb;
+        }
+
+        /* .media__feature-list:first-child {
+            filter: opacity(0.3);
+        } */
+        
 
         /* styling the media object - apply this style to the .media element */
         .card {
