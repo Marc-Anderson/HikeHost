@@ -1,8 +1,37 @@
 # HikeHost
 
 TODO
-add hover/active color to menu links
-add hover/active bar to menu links
+finish product pages - move desktop styles to mediaqueries
+
+NOTES
+
+## Choosing colors
+white
+black
+gray
+
+primary
+
+
+secondary
+
+tertiary
+
+---
+
+white - background
+black - body text
+
+green - text, nav, accents
+blue - hover, active
+
+gray - accent
+yellow - btn
+red - btn hover
+orange - accent
+light green - accent
+
+
 
 ```html
 <div id="test" style="">

@@ -52,39 +52,39 @@
 
         </header>
 
-        <main id="site-body" class="site-body">
+        <main id="site-body" class="site-body page--home">
 
             <section id="hero-section" class="hero-section">
                 
-                <div id="hero-image" class="hero-image">
+                <div id="hero-image" class="hero-image hero-image--homepage">
 
                 </div>
 
-                <div id="hero-cta" class="hero-cta">
+                <div id="homepage-hero-cta" class="homepage-hero-cta">
 
-                    <a  href="#" class="hero-cta-item">
-                        <span class="hero-cta-item--text">HIKING</span>
-                        <img class="hero-cta-item--img" src="assets/icons/hiker_green_right.png">
+                    <a  href="#" class="homepage-hero-cta-item">
+                        <span class="homepage-hero-cta-item--text">HIKING</span>
+                        <img class="homepage-hero-cta-item--img" src="assets/icons/hiker_green_right.png">
                     </a>
 
-                    <a  href="#" class="hero-cta-item">
-                        <span class="hero-cta-item--text">CAMPING</span>
-                        <img class="hero-cta-item--img" src="assets/icons//teepee_green.png">
+                    <a  href="#" class="homepage-hero-cta-item">
+                        <span class="homepage-hero-cta-item--text">CAMPING</span>
+                        <img class="homepage-hero-cta-item--img" src="assets/icons//teepee_green.png">
                     </a>
 
-                    <a  href="#" class="hero-cta-item">
-                        <span class="hero-cta-item--text">SNOWSHOEING</span>
-                        <img class="hero-cta-item--img" src="assets/icons/snowshoer_green_right.png">
+                    <a  href="#" class="homepage-hero-cta-item">
+                        <span class="homepage-hero-cta-item--text">SNOWSHOEING</span>
+                        <img class="homepage-hero-cta-item--img" src="assets/icons/snowshoer_green_right.png">
                     </a>
 
-                    <a  href="#" class="hero-cta-item">
-                        <span class="hero-cta-item--text">PADDLING</span>
-                        <img class="hero-cta-item--img" src="assets/icons/paddling_icon_green.png">
+                    <a  href="#" class="homepage-hero-cta-item">
+                        <span class="homepage-hero-cta-item--text">PADDLING</span>
+                        <img class="homepage-hero-cta-item--img" src="assets/icons/paddling_icon_green.png">
                     </a>
 
-                    <a  href="#" class="hero-cta-item" href="">
-                        <span class="hero-cta-item--text">FISHING</span>
-                        <img class="hero-cta-item--img" src="assets/icons/fisherman_green.png">
+                    <a  href="#" class="homepage-hero-cta-item" href="">
+                        <span class="homepage-hero-cta-item--text">FISHING</span>
+                        <img class="homepage-hero-cta-item--img" src="assets/icons/fisherman_green.png">
                     </a>
 
                 </div>
@@ -236,15 +236,15 @@
         
         
         // toggle the cta images/text with animation
-        let ctas = document.getElementsByClassName('hero-cta-item')
+        let ctas = document.getElementsByClassName('homepage-hero-cta-item')
 
         function ctaToggle(target) {
 
-            let ctaText = target.getElementsByClassName('hero-cta-item--text')[0]
-            let ctaImage = target.getElementsByClassName('hero-cta-item--img')[0]
+            let ctaText = target.getElementsByClassName('homepage-hero-cta-item--text')[0]
+            let ctaImage = target.getElementsByClassName('homepage-hero-cta-item--img')[0]
 
-            ctaText.classList.toggle('hero-cta-item--text-hover');              
-            ctaImage.classList.toggle('hero-cta-item--img-hover');
+            ctaText.classList.toggle('homepage-hero-cta-item--text-hover');              
+            ctaImage.classList.toggle('homepage-hero-cta-item--img-hover');
             
         }
         
