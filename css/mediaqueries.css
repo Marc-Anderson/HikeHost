@@ -57,6 +57,11 @@
         .media-grid {
             grid-gap: 10px;
         }
+
+        .product-features {
+            display: grid;
+        }
+
     }
 
     /* Medium devices (landscape tablets, 768px and up) */
@@ -64,10 +69,20 @@
         .homepage-hero-cta {
             display: grid;
         }
+        
+        .product-main {
+            display: grid;
+        }
+
     }
 
     /* Large devices (laptops/desktops, 992px and up) */
-    @media only screen and (min-width: 992px) {}
+    @media only screen and (min-width: 992px) {
+        
+        .product-detail-section {
+            padding: .6rem 4.5rem 2rem;
+        }
+    }
 
     /* Extra large devices (large laptops and desktops, 1200px and up) */
     @media only screen and (min-width: 1200px) {
