@@ -13,7 +13,7 @@ var adventures = [
         mainImage: "twin_mountain.jpg",
         topoImage: "twin_mountain_topo.jpg",
         difficulty: "Difficult",
-        difficultyNum: "65",
+        difficultyNum: "80",
         featureList: [1,1,0,1,0,1,1,0,0,0,0],
         get slug() {
             return slugify(this.title)
@@ -26,7 +26,7 @@ var adventures = [
         mainImage: "indian_head_mountain.jpg",
         topoImage: "indian_head_mountain_topo.jpg",
         difficulty: "Difficult",
-        difficultyNum: "65",
+        difficultyNum: "80",
         featureList: [1,1,0,1,1,0,1,1,0,0,1,1],
         get slug() {
             return slugify(this.title)
@@ -39,7 +39,7 @@ var adventures = [
         mainImage: "huckleberry_point.jpg",
         topoImage: "huckleberry_point_topo.jpg",
         difficulty: "Very Easy",
-        difficultyNum: "15",
+        difficultyNum: "20",
         featureList: [1,1,0,0,1,1,1,1,0,0,0,0],
         get slug() {
             return slugify(this.title)
@@ -52,7 +52,7 @@ var adventures = [
         mainImage: "friday_mountain.jpg",
         topoImage: "friday_mountain_topo.jpg",
         difficulty: "Very Difficult",
-        difficultyNum: "100",
+        difficultyNum: "95",
         featureList: [1,1,0,1,1,0,0,0,0,1,1,1],
         get slug() {
             return slugify(this.title)
@@ -65,7 +65,7 @@ var adventures = [
         mainImage: "balsam_cap_mountain.jpg",
         topoImage: "balsam_cap_mountain_topo.jpg",
         difficulty: "Very Difficult",
-        difficultyNum: "85",
+        difficultyNum: "95",
         featureList: [1,1,0,1,1,0,0,0,0,0,0,1],
         get slug() {
             return slugify(this.title)
@@ -91,7 +91,7 @@ var adventures = [
         mainImage: "vly_mountain.jpg",
         topoImage: "vly_mountain_topo.jpg",
         difficulty: "Moderate",
-        difficultyNum: "45",
+        difficultyNum: "60",
         featureList: [1,0,0,1,0,0,1,1,0,0,0,1],
         get slug() {
             return slugify(this.title)
@@ -104,7 +104,7 @@ var adventures = [
         mainImage: "bearpen_mountain.jpg",
         topoImage: "bearpen_mountain_topo.jpg",
         difficulty: "Easy",
-        difficultyNum: "25",
+        difficultyNum: "40",
         featureList: [1,0,0,1,1,0,1,1,0,0,0,0],
         get slug() {
             return slugify(this.title)
@@ -117,7 +117,7 @@ var adventures = [
         mainImage: "rocky_mountain.jpg",
         topoImage: "rocky_mountain_topo.jpg",
         difficulty: "Difficult",
-        difficultyNum: "75",
+        difficultyNum: "80",
         featureList: [1,1,0,1,1,0,0,0,0,0,0,1],
         get slug() {
             return slugify(this.title)
@@ -130,7 +130,7 @@ var adventures = [
         mainImage: "balsam_lake_mountain.jpg",
         topoImage: "balsam_lake_mountain_topo.jpg",
         difficulty: "Very Easy",
-        difficultyNum: "15",
+        difficultyNum: "20",
         featureList: [1,1,0,1,1,0,1,1,1,0,0,0],
         get slug() {
             return slugify(this.title)
@@ -143,7 +143,7 @@ var adventures = [
         mainImage: "none_mountain.jpg",
         topoImage: "none_mountain_topo.jpg",
         difficulty: "none",
-        difficultyNum: "15",
+        difficultyNum: "20",
         featureList: [0,0,0,0,0,0,0,0,0,0,0,0],
         get slug() {
             return slugify(this.title)

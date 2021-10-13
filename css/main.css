@@ -241,7 +241,7 @@ textarea {
 
         .site-header-logo {
             max-width: 210px;
-            padding: 9px 5px 8px 0px;
+            padding: 9px 5px 8px 10px;
             width: 80%;
         }
 
@@ -320,6 +320,25 @@ textarea {
         .hero-image--productpage {
             background-image: url(../assets/media/wittenberg_seasons_original.gif);
             height: 78vh;
+        }
+
+        .hero-image--contactpage {
+            background-image: url(../assets/media/ultrawide-view@1920x500.jpg);
+            height: 52vh;
+        }
+
+        .hero-image--heading {
+            width: 86%; 
+            margin: 0 auto; 
+            overflow: hidden; 
+            text-align: center;
+        }
+
+
+        .hero-image--heading h1 {
+            font-size: 4rem; 
+            margin: 1.1rem 0; 
+            color: white;
         }
 
 
@@ -775,6 +794,29 @@ textarea {
 
         /* .product-events-container p {} */
 
+
+    
+    /*
+    * Contact Styles
+    */
+
+    .intro-section {
+        padding: 10px;
+    }
+    
+    .intro-section p {
+        line-height: 1.7rem;
+    }
+
+    .contact-section {
+        width: 97%;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+
+    .contact-section h3{
+        text-align: center;
+    }
 
     
     /*
