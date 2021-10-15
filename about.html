@@ -39,7 +39,7 @@
                     <a href="index.html"><img class="site-header-logo" src="assets/media/hikehost_logo@500.png"></a>
 
                     <div style="text-align: right;">
-                        <a href=""><img class="site-header-mobile-menu" src="assets/icons/hamburger-black.png"></a>
+                        <img class="site-header-mobile-menu" src="assets/icons/hamburger-black.png">
                     </div>
                 </div>
 
@@ -82,7 +82,53 @@
                 <div class="contact-container">
 
                     <div class="info-accordion">
-                        This is an accordion
+
+                        <div class="accordion--container">
+
+                            <div class="accordion--group">
+
+                                <div class="accordion--heading">
+                                    <!-- <span class="accordion--icon">🞭</span> -->
+                                    <span class="accordion--icon">🞬</span>
+                                    <span class="accordion--title">Title</span>
+                                </div>
+
+                                <div class="accordion--panel">
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi autem consectetur, accusamus, eligendi numquam fuga at soluta eaque enim ducimus laudantium omnis natus commodi tempora repellat et deleniti quae saepe odit minus voluptates eveniet necessitatibus. Magnam, laborum. Architecto et atque consectetur earum a. Hic culpa, repudiandae odit possimus quam ipsa.</p>
+                                </div>
+
+                            </div>
+
+                            <div class="accordion--group">
+
+                                <div class="accordion--heading">
+                                    <!-- <span class="accordion--icon">🞭</span> -->
+                                    <span class="accordion--icon">🞬</span>
+                                    <span class="accordion--title">Title</span>
+                                </div>
+
+                                <div class="accordion--panel">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias dolorem architecto nostrum iusto tempora voluptatibus officia quo illo, at debitis a eveniet reiciendis quae quidem dolores porro dicta sed officiis! Incidunt, expedita numquam. Quos, ducimus ut? Corporis, molestias modi, enim id alias fuga fugiat excepturi iusto deleniti repellat nisi dolor sed aliquid nam eligendi? Porro, autem? Commodi voluptatem aut aperiam laborum corrupti eum fuga sapiente, dolores ex odit reprehenderit omnis adipisci quasi dolor, pariatur deleniti saepe rem iste numquam quos alias eveniet magni magnam harum. Dolorum labore placeat quam deleniti minus eos perspiciatis ullam molestias debitis delectus porro, fuga similique amet asperiores incidunt aut, nemo deserunt reiciendis cupiditate consequatur, voluptatum perferendis? Recusandae fugit et culpa, velit iusto a suscipit dolore sint nemo voluptatibus quas sit!</p>
+                                </div>
+
+                            </div>
+
+                            <div class="accordion--group">
+
+                                <div class="accordion--heading">
+                                    <!-- <span class="accordion--icon">🞭</span> -->
+                                    <span class="accordion--icon">🞬</span>
+                                    <span class="accordion--title">Title</span>
+                                </div>
+
+                                <div class="accordion--panel">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, est. Pariatur, doloribus reiciendis aliquam dicta inventore placeat omnis commodi. Nesciunt repudiandae iste iure, consectetur aut, mollitia eveniet nisi quis fuga quidem dignissimos, autem totam voluptatibus?</p>
+                                </div>
+
+                            </div>
+                            
+                        </div>
+
                     </div>
 
                     <div class="contact-form">
@@ -114,69 +160,6 @@
 
     <script>
 
-        
-        // replace all of the filler text with the appropriate content
-        function setPage(adventure) {
-
-            // page title
-            document.title.split(" ")[2] = adventure.title
-            // adventure title
-            document.querySelectorAll(".product-details h3")[0].textContent = adventure.title
-            // events title
-            document.querySelector(".product-events-container h2").textContent = `Upcoming Events at ${adventure.title}`
-
-            // adventure button
-            document.querySelector(".product-details .btn").textContent = `BOOK A TRIP TO ${adventure.title.toUpperCase()} TODAY`
-            
-            // difficulty question
-            document.querySelector(".product-difficulty h3").textContent = `What to expect at ${adventure.title}?`
-
-            // adventure elevation
-            document.querySelectorAll(".product-details h3")[1].textContent = adventure.elevation + "'"
-
-            // adventure description
-            document.querySelectorAll(".product-details p")[0].textContent = adventure.description
-
-            // adventure hero image
-            document.querySelector(".hero-image--productpage").style.backgroundImage = `url(assets/media/${adventure.mainImage})`
-
-            // adventure topo image
-            document.querySelector(".product-map").style.backgroundImage = `url(assets/media/${adventure.topoImage})`
-
-            // adventure status bar width
-            document.querySelector(".status-bar--fill").style.width = `${adventure.difficultyNum}%`
-
-            // adventure difficulty
-            document.querySelector(".status-bar--text").textContent = adventure.difficulty
-
-            for(i = 0; i < adventure.featureList.length; i++) {
-
-                if(adventure.featureList[i] == 1) {
-                    document.querySelectorAll(".feature-list li")[i].classList.toggle("list-check")
-                }
-            }
-
-        }
-
-        // load the page, look for the anchor and change the contents
-        window.addEventListener('load', function () {
-
-            // loop through all of the adventures and find the one in the anchor tag
-            for(i = 0; i < adventures.length; i++){
-
-                if(adventures[i].slug == window.location.hash.substr(1)) {
-                    setPage(adventures[i])
-                }
-            }
-            
-        })
-
-    
-
-    </script>
-
-    <script>
-
         // Hide and show the main menu on mobile
 
         let hamburger = document.getElementsByClassName('site-header-mobile-menu')[0]
@@ -186,6 +169,27 @@
         })
         
 
+        // Rotate accordion buttons and open accordions
+        let accordionGroup = document.getElementsByClassName('accordion--group')
+
+        for(i = 0; i < accordionGroup.length; i++) {
+
+            accordionGroup[i].addEventListener('click', (e)=> {
+                // e.stopPropagation();
+                if(e.target.classList.contains("accordion--heading") || e.target.parentNode.classList.contains("accordion--heading")) {
+
+                    let activeGroup = e.target.closest('.accordion--group')
+
+                    activeGroup.getElementsByClassName("accordion--icon")[0].classList.toggle("accordion--active")
+
+                    activeGroup.getElementsByClassName("accordion--panel")[0].classList.toggle("accordion--active")
+                    
+                }
+
+            })
+        }
+
+        
     </script>
 
     <script src="js/vendor/modernizr-3.11.2.min.js"></script>
