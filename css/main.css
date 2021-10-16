@@ -815,8 +815,45 @@ textarea {
         }
 
         .contact-section h3{
+            font-size: 2.3rem;
+            font-weight: 400;
+            margin-bottom: 1rem;
             text-align: center;
         }
+
+
+        .contact-container {
+            grid-template-columns: 1fr 2fr;
+            grid-gap: 1.3rem;
+        }
+
+
+
+
+    /*
+    * Contact Form
+    */
+
+    .contact-form {
+        /* margin: 0 auto; */
+        /* width: 100%; */
+        padding: 2px;
+    }
+    
+    /* .contact-form--wrap {} */
+
+    .contact-form h4 {
+        font-weight: 400;
+        margin: 5px 0;
+    }
+
+    .contact-form input {
+        box-sizing: border-box;
+        line-height: 2;
+        width: 100%;
+        border: 1px solid #dddddd;
+    }
+
 
     /*
     * Accordion Styles
@@ -824,21 +861,25 @@ textarea {
 
     /* .accordion--container {} */
 
+    /* main sections of the accordion */
     .accordion--group {
         border: 1px solid #dddddd;
         border-radius: 3px;
         /* box-shadow: 0 1px 1px 0 #aeaeae; */
     }
 
+    /* spacing between each section */
     .accordion--group:not(:first-child) {
         margin-top: 5px;
     }
 
+    /* heading box of each group */
     .accordion--heading {
         border-bottom: 1px solid #dddddd;
         padding: 10px 15px;
     }
     
+    /* X icon in the heading box */
     .accordion--icon {
         color: #cccccc;
         display: inline-block;
@@ -854,22 +895,28 @@ textarea {
         padding-right: 5px;
     }
 
+    /* content section of the accordion group */
     .accordion--panel {
         max-height: 0px;
         overflow: hidden;
         transition-property: max-height;
         transition-duration: 700ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-        /* transition-delay: 100ms; */
     }
 
     /* need to adjust max height accordingly */
     .accordion--panel.accordion--active {
-        max-height: 250px;
+        max-height: 500px;
     }
 
-    .accordion--panel p {
-        padding: 10px 15px;
+    /* box inside of the panel which contains all of  */
+    .accordion--panel-contents {
+        padding: 5px 15px;
+        line-height: 1.7;
+    }
+
+    .accordion--panel-contents h4 {
+        margin-bottom: 5px;
     }
     
     /*

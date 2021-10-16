@@ -82,7 +82,9 @@
             width: 86%;
         }
     
-
+        .contact-container {
+            display: grid;
+        }
     }
 
     /* Large devices (laptops/desktops, 992px and up) */
