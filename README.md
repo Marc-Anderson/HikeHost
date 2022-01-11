@@ -1,1 +1,3 @@
 # HikeHost
+
+static
